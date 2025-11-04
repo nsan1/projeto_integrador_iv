@@ -1,0 +1,105 @@
+{
+  "config": "{\"version\":\"5.54\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU05\",\"version\":\"5.54\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU05",
+            "path": "BaseThemes/CY24SU05.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Página 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "9cae7e845a42f1a7e8e8",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"26e2672786246e9506a7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":9.884169884169884,\"y\":194.71814671814673,\"z\":6000,\"width\":333.0965250965251,\"height\":68.2007722007722,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Sheet1.cliente\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Sheet1\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"cliente\"},\"Name\":\"Sheet1.cliente\",\"NativeReferenceName\":\"cliente\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 68.20,
+          "width": 333.10,
+          "x": 9.88,
+          "y": 194.72,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"3e1af9e47d6cddb5de71\",\"layouts\":[{\"id\":0,\"position\":{\"x\":9.884169884169884,\"y\":74.13127413127413,\"z\":7000,\"width\":333.0965250965251,\"height\":102.79536679536679,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Sheet1.data\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Sheet1\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"data\"},\"Name\":\"Sheet1.data\",\"NativeReferenceName\":\"data\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"data\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"endDate\":{\"expr\":{\"Literal\":{\"Value\":\"datetime'2025-10-31T00:00:00'\"}}},\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Between'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Sheet1\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Comparison\":{\"ComparisonKind\":3,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"data\"}},\"Right\":{\"Literal\":{\"Value\":\"datetime'2025-11-01T00:00:00'\"}}}}}]}}}}]}}}",
+          "filters": "[]",
+          "height": 102.80,
+          "width": 333.10,
+          "x": 9.88,
+          "y": 74.13,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"471b99669e4c1a9cd27d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":342.980694980695,\"y\":15.814671814671815,\"z\":4000,\"width\":629.6216216216217,\"height\":58.316602316602314,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Procedimentos do Salão de Beleza\",\"textStyle\":{\"fontSize\":\"24pt\"}}],\"horizontalTextAlignment\":\"center\"}]}}]}}}",
+          "filters": "[]",
+          "height": 58.32,
+          "width": 629.62,
+          "x": 342.98,
+          "y": 15.81,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"5c37239802958196d150\",\"layouts\":[{\"id\":0,\"position\":{\"x\":342.980694980695,\"y\":415.13513513513516,\"z\":1000,\"width\":542.6409266409266,\"height\":262.9189189189189,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Sheet1.data\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(Sheet1.tipo)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Sheet1\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"data\"},\"Name\":\"Sheet1.data\",\"NativeReferenceName\":\"data\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"tipo\"}},\"Function\":5},\"Name\":\"CountNonNull(Sheet1.tipo)\",\"NativeReferenceName\":\"Contagem de tipo\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"tipo\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryAxis\":[{\"properties\":{\"invertAxis\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"axisType\":{\"expr\":{\"Literal\":{\"Value\":\"'Scalar'\"}}},\"preferredCategoryWidth\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}},\"gridlineShow\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"valueAxis\":[{\"properties\":{\"gridlineShow\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"end\":{\"expr\":{\"Literal\":{\"Value\":\"4D\"}}}}}],\"lineStyles\":[{\"properties\":{\"strokeShow\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"lineStyle\":{\"expr\":{\"Literal\":{\"Value\":\"'solid'\"}}},\"strokeLineJoin\":{\"expr\":{\"Literal\":{\"Value\":\"'round'\"}}},\"strokeWidth\":{\"expr\":{\"Literal\":{\"Value\":\"1L\"}}},\"lineChartType\":{\"expr\":{\"Literal\":{\"Value\":\"'smooth'\"}}},\"interpolationSmooth\":{\"expr\":{\"Literal\":{\"Value\":\"'monotoneX'\"}}},\"interpolationSmoothParam\":{\"expr\":{\"Literal\":{\"Value\":\"100D\"}}},\"showMarker\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 262.92,
+          "width": 542.64,
+          "x": 342.98,
+          "y": 415.14,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"640de499fb1cd14ca1b8\",\"layouts\":[{\"id\":0,\"position\":{\"x\":885.6216216216217,\"y\":415.13513513513516,\"z\":0,\"width\":394.3783783783784,\"height\":262.9189189189189,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Sheet1.tipo\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(Sheet1.tipo)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Sheet1\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"tipo\"},\"Name\":\"Sheet1.tipo\",\"NativeReferenceName\":\"tipo\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"tipo\"}},\"Function\":5},\"Name\":\"CountNonNull(Sheet1.tipo)\",\"NativeReferenceName\":\"Contagem de tipo\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"tipo\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryAxis\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"valueAxis\":[{\"properties\":{\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"'Quantidade'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 262.92,
+          "width": 394.38,
+          "x": 885.62,
+          "y": 415.14,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"c81d06f1cd44df5dcde4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":342.980694980695,\"y\":105.76061776061776,\"z\":2000,\"width\":542.6409266409266,\"height\":232.27799227799227,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Sheet1.cliente\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(Sheet1.tipo)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Sheet1\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"cliente\"},\"Name\":\"Sheet1.cliente\",\"NativeReferenceName\":\"cliente\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"tipo\"}},\"Function\":5},\"Name\":\"CountNonNull(Sheet1.tipo)\",\"NativeReferenceName\":\"Contagem de tipo\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"tipo\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 232.28,
+          "width": 542.64,
+          "x": 342.98,
+          "y": 105.76,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"da16ff0b27e6282f1bd2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":288.6177606177606,\"z\":5000,\"width\":333.0965250965251,\"height\":410.19305019305017,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Sheet1.tipo\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Sheet1\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"tipo\"},\"Name\":\"Sheet1.tipo\",\"NativeReferenceName\":\"tipo\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}],\"header\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Tipo de procedimento'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 410.19,
+          "width": 333.10,
+          "x": 0.00,
+          "y": 288.62,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"f2e93d230a1542f65ee3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":885.6216216216217,\"y\":105.76061776061776,\"z\":3000,\"width\":394.3783783783784,\"height\":232.27799227799227,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Sheet1.dia_semana\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(Sheet1.tipo)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Sheet1\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"dia_semana\"},\"Name\":\"Sheet1.dia_semana\",\"NativeReferenceName\":\"dia_semana\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"tipo\"}},\"Function\":5},\"Name\":\"CountNonNull(Sheet1.tipo)\",\"NativeReferenceName\":\"Contagem de tipo\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"tipo\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 232.28,
+          "width": 394.38,
+          "x": 885.62,
+          "y": 105.76,
+          "z": 3000.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}
